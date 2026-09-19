@@ -13,7 +13,7 @@ Task: Product Creation Form with Fake API
 =================================================
 */
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const initialForm = {
   name: "",
@@ -88,7 +88,7 @@ function CreateProduct() {
       setStatus("success");
       setForm(initialForm);
       setErrors({});
-    } catch (err) {
+    } catch {
       setStatus("error");
     }
   };

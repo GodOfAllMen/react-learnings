@@ -13,7 +13,7 @@ Task: College Event Registration Form
 =================================================
 */
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const initialForm = {
   name: "",
@@ -95,7 +95,7 @@ function EventRegistration() {
       setStatus("success");
       setForm(initialForm);
       setErrors({});
-    } catch (err) {
+    } catch {
       setStatus("error");
     }
   };

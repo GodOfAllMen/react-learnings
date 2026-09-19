@@ -13,7 +13,7 @@ Task: Employee Registration Form
 =================================================
 */
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 const initialForm = {
   name: "",
@@ -86,7 +86,7 @@ function EmployeeForm() {
       setStatus("success");
       setForm(initialForm);
       setErrors({});
-    } catch (err) {
+    } catch {
       setStatus("error");
     }
   };
